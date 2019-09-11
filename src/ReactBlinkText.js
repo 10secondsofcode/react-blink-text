@@ -1,48 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-const propTypes = {
-    label: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired,
-    styles: PropTypes.object
-}
-
-const defaultProps = {
-    styles: {
-        label: {
-            fontFamily: 'Comic Sans MS',
-            color: 'green'
-        },
-        input: {
-            background: '#ddd',
-            border: '1px solid red'
-        }
-    }
-}
+import './ReactBlinkText.css'
 
 class ReactBlinkText extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(e) {
-        this.props.onChange(e.target.value);
-    }
-    
     render() {
-        const styles = this.props.styles || {};
+        const { color, fontSize, text } = this.props;
 
         return (
             <div>
-                <label style={styles.label}>{this.props.label}</label>
-                <input type="text" style={styles.input} onChange={this.handleChange} />
+                 <span className="blink" style={{ color: color, fontSize: fontSize }}>
+                    {text}
+                </span>
             </div>
         );
     }
 }
 
-ReactBlinkText.propTypes = propTypes;
-ReactBlinkText.defaultProps = defaultProps;
+ReactBlinkText.propTypes = {
+    /** hex color */
+    color: PropTypes.string
+}
+
+ReactBlinkText.defaultProps = {
+    color: '#7f58af',
+    fontSize: 55,
+    text: 'React Blink'
+}
 
 export default ReactBlinkText;
