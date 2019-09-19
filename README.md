@@ -2,7 +2,7 @@
 
 This reusable React component will manage to blink any text and changing the text color and font size if we need.
 
-Blink takes plain HTML tags and outputs plain HTML tags. It's dead simple, and React beginner friendly.
+`Blink` takes plain HTML tags and outputs plain HTML tags. It's dead simple, and React beginner friendly.
 
 ## Example 
 
