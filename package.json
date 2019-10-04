@@ -1,6 +1,6 @@
 {
     "name": "react-blink-text",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "React Blink Component for npm",
     "main": "./lib/ReactBlinkText.js",
     "license": "MIT",
@@ -45,5 +45,8 @@
     "bugs": {
         "url": "https://github.com/10secondsofcode/react-blink-text/issues"
     },
-    "homepage": "https://github.com/10secondsofcode/react-blink-text#readme"
+    "homepage": "https://github.com/10secondsofcode/react-blink-text#readme",
+    "publishConfig": {
+         "registry": "https://npm.pkg.github.com/"
+    }
 }
