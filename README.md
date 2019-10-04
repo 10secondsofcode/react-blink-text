@@ -10,8 +10,7 @@ This reusable React component will manage to blink any text and changing the tex
 import React, { Component } from "react";
 import Blink from 'react-blink-text';
 
-class Application extends Component {
-  render() {
+function Application(){
     return (
       <div className="Application">
         <Blink color='blue' text='TestReactApp' fontSize='20'>
@@ -19,7 +18,6 @@ class Application extends Component {
         </Blink> 
       </div>
     );
-  }
 }
 export default Application;
 ```
