@@ -7,8 +7,8 @@ class ReactBlinkText extends React.Component {
         const { color, fontSize, text, background, opacity } = this.props;
 
         return (
-            <div>
-                 <span className="blink" style={{ color: color, fontSize: fontSize, backgroundColor: background, opacity: opacity }}>
+            <div style={{backgroundColor: background, opacity: opacity }}>
+                 <span className="blink" style={{ color: color, fontSize: fontSize }}>
                     {text}
                 </span>
             </div>
