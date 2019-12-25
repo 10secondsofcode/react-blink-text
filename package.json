@@ -47,6 +47,6 @@
     },
     "homepage": "https://github.com/10secondsofcode/react-blink-text#readme",
     "publishConfig": {
-         "registry": "https://npm.pkg.github.com/"
+        "registry": "https://npm.pkg.github.com/"
     }
 }
