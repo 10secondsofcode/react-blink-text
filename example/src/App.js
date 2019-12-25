@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <h1>Demo for React Blink Text</h1>
       <BasicExample />
-      {/* <ColorExample />
-      <FontExample /> */}
+      <ColorExample />
+      <FontExample />
     </div >
   );
 }
